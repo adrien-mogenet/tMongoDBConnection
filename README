@@ -1,0 +1,19 @@
+==============================================================================
+
+                               * R E A D M E *
+
+==============================================================================
+
+	ABOUT
+	=====
+
+		Author: ........Adrien Mogenet <adrien.mogenet@gmail.com>
+		Creation: ......2010-04-13
+
+
+	PURPOSE
+	=======
+	
+		tMongoDBConnection is a Talend component to be used in Talend Open 		
+		Studio or Talend Integration Suite in order to connect to a MongoDB
+		server.
