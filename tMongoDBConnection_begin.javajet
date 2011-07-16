@@ -23,8 +23,10 @@
     String dbuser   = ElementParameterParser.getValue(node, "__USERNAME__");
     String dbpass   = ElementParameterParser.getValue(node, "__PASSWORD__");
     Integer dbport  = new Integer(ElementParameterParser.getValue(node, "__PORT__"));
+    String writeConcern = ElementParameterParser.getValue(node, "__WRITE_CONCERN__");
 %>
 com.mongodb.Mongo mongo_<%=cid%> = new com.mongodb.Mongo(<%=dbhost%>, <%=dbport%>);
+mongo_<%=cid%>.setWriteConcern(com.mongodb.WriteConcern.<%=writeConcern%>);
 com.mongodb.DB db_<%=cid%> = mongo_<%=cid%>.getDB(<%=dbname%>);
 
 globalMap.put("mongo_<%=cid%>", mongo_<%=cid%>);
